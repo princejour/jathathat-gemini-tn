@@ -1,0 +1,8 @@
+npm install -g firebase-tools
+firebase login
+firebase use jathathat-gemini-tn
+cd functions
+npm install
+cd ..
+firebase functions:secrets:set GEMINI_API_KEY
+firebase deploy --only functions,hosting
