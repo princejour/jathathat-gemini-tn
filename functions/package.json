@@ -1,0 +1,17 @@
+{
+  "name": "jathathat-gemini-functions",
+  "description": "Secure Firebase Cloud Function proxy for Gemini lesson plan generator",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions,hosting",
+    "deploy": "firebase deploy --only functions,hosting"
+  },
+  "dependencies": {
+    "firebase-functions": "^6.0.1"
+  }
+}
